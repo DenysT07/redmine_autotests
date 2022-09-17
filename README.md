@@ -1,4 +1,7 @@
 # redmine_autotests
+This project tests site redmine.org useing Pyay Wright framework.
+To see allure report follow the link https://denyst0707.gitlab.io/redmine_autotests/
+
 ###Main branch
   pages/
 
