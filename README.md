@@ -1,5 +1,5 @@
 # redmine_autotests
-Main branch
+###Main branch
   pages/
 
   Pages folder contain all page object fils that have been used in tests
@@ -10,14 +10,13 @@ Main branch
 
   check_list_redmine.pdf is a PDF file with test cases
 
-Reports branch
+##Reports branch
 
   allure-report/
 
   contain allure reports for tests
   
   allure-result/
-  mu-allure-result/
   
   contain all files for report
   
