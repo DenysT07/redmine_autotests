@@ -33,11 +33,11 @@ test.describe('Test Cases', () => {
     await mainPg.clickIssuesButton();
     await issuesPg.selectFilter('tracker_id')
     await issuesPg.selectFilter('created_on')
+    await issuesPg.entryStatusSeleckt('c')
     await issuesPg.selectTrackerFilter('3')
     await issuesPg.insertDateIntoCdreatedFilter('2022-09-01')
     await issuesPg.clickApplyButton()
     await expect (await issuesPg.getIdLoc()).toHaveText('37636')
-    // await page.pause()
   });
 
   test('Check Slack link on the "Wiki" page', async ({ page }) => {
@@ -46,7 +46,6 @@ test.describe('Test Cases', () => {
     await expect(await mainPg.getSlackLinkLoc()).toBeVisible()
     await mainPg.clickSluckLink()
     await expect(page).toHaveURL('https://redmineorg.slack.com/join/shared_invite/zt-ew74bkww-9~Cs~L2oSioRXDljumZ_zg#/shared-invite/email');
-    // await page.pause()
   });
 
   test('Сhecking the transition to a specific entry from the "roadmap" menu', async ({ page }) => {
@@ -72,6 +71,5 @@ test.describe('Test Cases', () => {
   await searchPg.commitButtonClick()
   await searchPg.additionalsButtonClick()
   await expect(page).toHaveURL('https://www.redmine.org/plugins/additionals')
-  // await page.pause()
   });
 });

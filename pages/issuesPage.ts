@@ -18,5 +18,8 @@ export default class IssuesPage{
     async getIdLoc() {
         return await this.page.locator('[class="id"]')
     }
+    async entryStatusSeleckt(value) {
+        await this.page.locator('[id="operators_status_id"]').selectOption(value)
+    }
 
 }
