@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "instal-allure": "npm i -D allure-playwright", 
+  "instal-allure": "npm install allure-commandline --save-dev", 
   "instal-playwright": "npx playwright install",
   "test": "npx playwright test --reporter=line,allure-playwright",
   "allure-generate": "allure generate",

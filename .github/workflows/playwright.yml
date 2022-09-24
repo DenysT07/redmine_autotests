@@ -13,8 +13,8 @@ jobs:
         with:
           node-version: '16.9.1' # In command line run “node -v” and choose your version
       - run: npm ci
-      - run: npm run instal-allure
       - run: npm run instal-playwright
+      - run: npm run instal-allure
       - name: run test
         run: npm run test # Our name of the headless script
       - name: Copy History
