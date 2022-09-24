@@ -6,7 +6,7 @@
   "scripts": {
   "instal-playwright": "npx playwright install",
   "test": "npx playwright test --reporter=line,allure-playwright",
-  "allure-generate": "allure generate --clean",
+  "allure-generate": "allure generate",
   "allure-serve": "allure serve"},
   "repository": {
     "type": "git",
