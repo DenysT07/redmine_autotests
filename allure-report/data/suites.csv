@@ -1,6 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sat Sep 24 18:15:31 EEST 2022","Sat Sep 24 18:15:37 EEST 2022","5682","chromium","spec.ts","Test Cases","","","Check search field",""
-"passed","Sat Sep 24 18:15:31 EEST 2022","Sat Sep 24 18:15:42 EEST 2022","10230","chromium","spec.ts","Test Cases","","","Check registration page",""
-"passed","Sat Sep 24 18:15:31 EEST 2022","Sat Sep 24 18:15:37 EEST 2022","5691","chromium","spec.ts","Test Cases","","","Check filters functional on the ""issues"" page",""
-"passed","Sat Sep 24 18:15:31 EEST 2022","Sat Sep 24 18:15:38 EEST 2022","6341","chromium","spec.ts","Test Cases","","","Сhecking the transition to a specific entry from the ""roadmap"" menu",""
-"passed","Sat Sep 24 18:15:31 EEST 2022","Sat Sep 24 18:15:39 EEST 2022","7238","chromium","spec.ts","Test Cases","","","Check Slack link on the ""Wiki"" page",""
