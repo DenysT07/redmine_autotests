@@ -35,21 +35,21 @@ jobs:
         with:
           name: allure-report
           path: allure-report       
-      # - name: Deploy report
-      #   uses: JamesIves/github-pages-deploy-action@4.1.4
-      #   if: always()
-      #   with:
-      #     branch: gh-pages # The branch the action should deploy to.
-      #     folder: D:\redmine_autotests\redmine_autotests\allure-report # The folder the action should deploy.
-      #     target-folder: docs
-      # - name: Pushes docs to another repository
-      #   uses: cpina/github-action-push-to-another-repository@v1.3
-      #   if: always()
-      #   env:
-      #     API_TOKEN_GITHUB: ${{ 'YOUR TOKEN' }} # Instruction where to get token is below
-      #   with:
-      #     source-directory: 'docs'
-      #     destination-github-username: 'username' # Your username
-      #     destination-repository-name: 'reponame' # Name of your repo
-      #     user-email: user@gmail.com # Your email
-      #     target-branch: main
+      - name: Deploy report
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        if: always()
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: allure-report # The folder the action should deploy.
+          target-folder: docs
+      - name: Pushes docs to another repository
+        uses: cpina/github-action-push-to-another-repository@v1.3
+        if: always()
+        env:
+          API_TOKEN_GITHUB: ${{ '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' }} # Instruction where to get token is below
+        with:
+          source-directory: 'docs'
+          destination-github-username: 'DenysT0707' # Your username
+          destination-repository-name: 'redmine_autotests' # Name of your repo
+          user-email: denist0707@gmail.com # Your email
+          target-branch: main
