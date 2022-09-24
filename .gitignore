@@ -1,6 +1,5 @@
 node_modules/
-allure-report/
-allure-result/
+allure-results/
 tests-examples/
 playwright-report/
 
