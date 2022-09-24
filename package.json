@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+  "instal-playwright": "npx playwright install",
   "test": "npx playwright test --reporter=line,allure-playwright",
   "allure-generate": "allure generate --clean",
   "allure-serve": "allure serve"},

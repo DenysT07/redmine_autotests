@@ -13,15 +13,15 @@ jobs:
         with:
           node-version: '16.9.1' # In command line run “node -v” and choose your version
       - run: npm ci
-     #  - run: npm config set script-shell "G:\Git\bin\bash.exe"
+      - run: npm run instal-playwright
       - name: run test
-        run: npm run test:headless # Our name of the headless script
+        run: npm run test # Our name of the headless script
       - name: Copy History
         if: always()
         run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history
       - name: Generate Report
         if: always()
-        run: npm run allure:generate # Name of the allure generate script
+        run: npm run allure-generate # Name of the allure generate script
       - name: Upload Results
         uses: actions/upload-artifact@v1
         if: always()
